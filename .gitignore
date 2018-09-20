@@ -1,0 +1,11 @@
+# General
+.DS_Store
+*/.DS_Store
+Thumbs.db
+*.exe
+
+# Multimedia
+*.avi
+*.mp3
+*.mp4
+*.mpk
