@@ -1,4 +1,4 @@
-use RJ_001
+use RJ_005
 -- 기맥 마지막 접속일자
 -- 최초 배정일자 / 마지막 배정일자
 -- 최초 청구일자 / 마지막 청구일자
@@ -14,10 +14,10 @@ declare @startYmd datetime
 declare @nowYmd datetime
 declare @in_date datetime
 
-set @johapCode = 'RJ_001'
+set @johapCode = 'RJ_005'
 set @startYmd = '2016-01-01'
-set @nowYmd = '2018-09-19'
-set @in_date = '2009-12-01'  --광역전산망 최초 사용일자
+set @nowYmd = '2018-12-31'
+set @in_date = '2000-12-01'  --광역전산망 최초 사용일자
 
 select J.johap_cust_code cust_code, J.cust_code company_code, max(U.connect_ymd) connect_ymd 
 into #tmp_1
